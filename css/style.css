@@ -153,6 +153,11 @@ p1 {
   font-size: 0.9rem;
 }
 
+.info-strong{
+  display: inline-block;
+  width: 150px;
+}
+
 /* Typewriter Effect */
 .typewriter {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
