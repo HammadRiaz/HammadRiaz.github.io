@@ -101,6 +101,7 @@ p1 {
 .subtitle {
   color: #72c2ff;
   font-size: clamp(1rem, 1.2vw, 1.2rem);
+  word-break: break-word; /* Break long links if needed */
 }
 
 /* Lists */
@@ -153,9 +154,17 @@ p1 {
   font-size: 0.9rem;
 }
 
+.info p {
+  display: flex;
+  align-items: baseline;
+  gap: 8px; /* Add space between the strong tag and the content */
+  flex-wrap: wrap; /* Ensure text wraps on smaller screens */
+}
+
 .info-strong{
   display: inline-block;
   width: 150px;
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 /* Typewriter Effect */
@@ -187,6 +196,15 @@ p1 {
     padding: 15px;
   }
 
+  .info-strong{
+    width: 100%;
+  }
+
+  .info p{
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align text to the left */
+  }
+
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.5rem; }
 }
@@ -194,6 +212,14 @@ p1 {
 @media (max-width: 480px) {
   .glass-section {
     padding: 10px;
+  }
+
+  .info-strong{
+    width: 100%;
+  }
+
+  .info p{
+    gap: 4px;
   }
 
   h1 { font-size: 1.5rem; }
