@@ -1,9 +1,10 @@
 /* General Glass Theme */
 body.glass-theme {
   margin: 0;
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   background: linear-gradient(135deg, #405258, #ce3d3d);
   overflow-x: hidden;
+  font-weight: 500;
 }
 
 /* Animated Background */
@@ -170,6 +171,7 @@ p1 {
 /* Typewriter Effect */
 .typewriter {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-family: 'Roboto Mono', 'sans-serif';
   overflow: hidden;
   border-right: 2px solid #fff;
   white-space: nowrap;
